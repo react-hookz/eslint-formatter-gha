@@ -32,7 +32,7 @@ yarn add -D @react-hookz/eslint-formatter-gha
 ## Usage
 
 ```shell
-eslint -g @react-hookz/gha
+eslint -f @react-hookz/gha
 ```
 
 ## Contributors
