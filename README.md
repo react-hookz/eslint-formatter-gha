@@ -24,9 +24,9 @@ Custom formatter for ESLint that generates GitHub Actions annotations.
 This one is pretty simple, everyone knows what to do:
 
 ```shell
-npm i @react-hookz/eslint-formatter-gha
+npm i --save-dev @react-hookz/eslint-formatter-gha
 # or
-yarn add @react-hookz/eslint-formatter-gha
+yarn add -D @react-hookz/eslint-formatter-gha
 ```
 
 ## Usage

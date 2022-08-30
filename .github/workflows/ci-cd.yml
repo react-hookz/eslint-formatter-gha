@@ -31,8 +31,8 @@ jobs:
           useRollingCache: true
           install-command: yarn --frozen-lockfile
 
-#      - name: "Lint"
-#        run: yarn lint -f @react-hookz/gha
+      - name: "Lint"
+        run: yarn lint -f @react-hookz/gha
 
   build:
     name: "Build"
