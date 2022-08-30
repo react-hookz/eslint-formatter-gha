@@ -46,6 +46,13 @@ eslint -g @react-hookz/gha
             <br />
             <sub><b>Anton Zinovyev</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/semantic-release-bot">
+            <img src="https://avatars.githubusercontent.com/u/32174276?v=4" width="100;" alt="semantic-release-bot"/>
+            <br />
+            <sub><b>Semantic Release Bot</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
