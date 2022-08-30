@@ -1,0 +1,72 @@
+{
+  "name": "@react-hookz/eslint-formatter-gha",
+  "description": "Eslint formatter that that outputs GitHub Actions annotations.",
+  "version": "0.0.0",
+  "keywords": [
+    "eslint",
+    "formatter",
+    "github",
+    "eslint-formatter",
+    "eslintformatter",
+    "guthub-actions",
+    "guthubactions"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-hookz/eslint-formatter-gha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/react-hookz/eslint-formatter-gha/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,mdx}": "eslint --fix"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint ./ --ext ts,js,tsx,jsx,md,mdx",
+    "lint:fix": "yarn lint --fix",
+    "build": "yarn build:cleanup && yarn build:cjs",
+    "build:cleanup": "rimraf ./dist",
+    "build:cjs": "tsc -p ./tsconfig.build.json"
+  },
+  "dependencies": {
+    "@actions/core": "^1.9.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/cz-commitlint": "^17.1.2",
+    "@react-hookz/eslint-config": "^1.7.3",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.6",
+    "@types/eslint": "^8.4.6",
+    "@types/node": "^18.7.14",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.5",
+    "typescript": "^4.8.2",
+    "yarn": "^1.22.19"
+  }
+}
