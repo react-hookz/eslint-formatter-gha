@@ -49,7 +49,7 @@
     "build:cjs": "tsc -p ./tsconfig.build.json"
   },
   "dependencies": {
-    "@actions/core": "^1.9.1"
+    "@actions/core": "^1.10.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
