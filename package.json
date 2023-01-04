@@ -62,7 +62,7 @@
     "@semantic-release/github": "^8.0.7",
     "@types/eslint": "^8.4.10",
     "@types/node": "^18.11.18",
-    "husky": "^8.0.2",
+    "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
     "rimraf": "^3.0.2",
