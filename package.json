@@ -54,7 +54,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
-    "@commitlint/cz-commitlint": "^17.4.4",
+    "@commitlint/cz-commitlint": "^17.5.0",
     "@react-hookz/eslint-config": "^1.7.6",
     "@react-hookz/eslint-formatter-gha": "^1.0.0",
     "@semantic-release/changelog": "^6.0.2",
