@@ -55,7 +55,7 @@
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
     "@commitlint/cz-commitlint": "^17.5.0",
-    "@react-hookz/eslint-config": "^1.7.7",
+    "@react-hookz/eslint-config": "^1.8.0",
     "@react-hookz/eslint-formatter-gha": "^1.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
