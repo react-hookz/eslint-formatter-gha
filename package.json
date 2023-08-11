@@ -52,7 +52,7 @@
     "@actions/core": "^1.10.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.0",
+    "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.6.7",
     "@commitlint/cz-commitlint": "^17.7.0",
     "@react-hookz/eslint-config": "^1.8.0",
