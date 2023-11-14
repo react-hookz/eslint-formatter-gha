@@ -64,7 +64,7 @@
     "@types/node": "^20.8.6",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "prettier": "^2.8.8",
+    "prettier": "^3.1.0",
     "rimraf": "^5.0.5",
     "semantic-release": "^19.0.5",
     "typescript": "^5.2.2",
