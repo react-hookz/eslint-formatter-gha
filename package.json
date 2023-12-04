@@ -63,7 +63,7 @@
     "@types/eslint": "^8.44.4",
     "@types/node": "^20.8.6",
     "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
+    "lint-staged": "^15.2.0",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.5",
     "semantic-release": "^19.0.5",
