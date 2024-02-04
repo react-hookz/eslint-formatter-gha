@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/react-hookz/eslint-formatter-gha/compare/v2.0.0...v2.0.1) (2024-02-04)
+
+
+### Bug Fixes
+
+* proper npmignore config ([43a413f](https://github.com/react-hookz/eslint-formatter-gha/commit/43a413fe4c76cc0c47309cae81a671f2fbe0a704))
+
 # [2.0.0](https://github.com/react-hookz/eslint-formatter-gha/compare/v1.0.1...v2.0.0) (2024-02-04)
 
 

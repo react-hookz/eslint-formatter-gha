@@ -1,7 +1,7 @@
 {
 	"name": "@react-hookz/eslint-formatter-gha",
 	"description": "Eslint formatter that that outputs GitHub Actions annotations.",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"keywords": [
 		"eslint",
 		"formatter",
