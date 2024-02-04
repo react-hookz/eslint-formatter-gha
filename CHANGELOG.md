@@ -1,3 +1,20 @@
+# [2.0.0](https://github.com/react-hookz/eslint-formatter-gha/compare/v1.0.1...v2.0.0) (2024-02-04)
+
+
+### Bug Fixes
+
+* **docs:** update link to GHA actions badge ([8774d39](https://github.com/react-hookz/eslint-formatter-gha/commit/8774d396067a2ea4b7805d46585076bacae863b3))
+
+
+### Features
+
+* switch to module package ([62f9df7](https://github.com/react-hookz/eslint-formatter-gha/commit/62f9df7c62ca10b97ea05ce0b07bf1cef1d1fb03))
+
+
+### BREAKING CHANGES
+
+* the package is not of type `module`
+
 ## [1.0.1](https://github.com/react-hookz/eslint-formatter-gha/compare/v1.0.0...v1.0.1) (2022-08-30)
 
 
