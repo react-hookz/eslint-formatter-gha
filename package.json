@@ -39,7 +39,7 @@
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^18.6.1",
-		"@commitlint/config-conventional": "^18.6.2",
+		"@commitlint/config-conventional": "^19.0.0",
 		"@commitlint/cz-commitlint": "^18.6.1",
 		"@react-hookz/eslint-config": "^2.1.5",
 		"@react-hookz/eslint-formatter-gha": "^1.0.0",
