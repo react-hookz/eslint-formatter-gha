@@ -79,13 +79,13 @@
     "@commitlint/types" "^19.0.3"
     ajv "^8.11.0"
 
-"@commitlint/cz-commitlint@^19.0.3":
-  version "19.0.3"
-  resolved "https://registry.yarnpkg.com/@commitlint/cz-commitlint/-/cz-commitlint-19.0.3.tgz#55cbb8bb4ae46291063d9afd0b9523c62e351f4f"
-  integrity sha512-DarzAFzoE5dAiEgVikE7odwSglfvxN1GfCg+R/nwsCZKNS3j7dzEy85NQMmQ6C5y2YmbQAjZ0/nM47W8gRzkzw==
+"@commitlint/cz-commitlint@^19.1.0":
+  version "19.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/cz-commitlint/-/cz-commitlint-19.1.0.tgz#4740b078b2913f477ef85a34bc87fc15ff299577"
+  integrity sha512-ABbOmQbckCjBv1xkcsPVNMWikcdMXY3QF491xut1zar+K9Fj5XjUfAvDeJMe/wBigs+6lu8vymnLzLUNwbMDPQ==
   dependencies:
     "@commitlint/ensure" "^19.0.3"
-    "@commitlint/load" "^19.0.3"
+    "@commitlint/load" "^19.1.0"
     "@commitlint/types" "^19.0.3"
     chalk "^5.3.0"
     lodash.isplainobject "^4.0.6"
@@ -134,14 +134,14 @@
     "@commitlint/rules" "^19.0.3"
     "@commitlint/types" "^19.0.3"
 
-"@commitlint/load@^19.0.3":
-  version "19.0.3"
-  resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-19.0.3.tgz#f05ce3830482e3908799f8e6eb202c8d9713efd8"
-  integrity sha512-18Tk/ZcDFRKIoKfEcl7kC+bYkEQ055iyKmGsYDoYWpKf6FUvBrP9bIWapuy/MB+kYiltmP9ITiUx6UXtqC9IRw==
+"@commitlint/load@^19.0.3", "@commitlint/load@^19.1.0":
+  version "19.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-19.1.0.tgz#08403b6ea33e50b013dba0ab9631fd67fde67e30"
+  integrity sha512-rWqnvNDpeshX8JfUC/qjpDkQB78qF+4uHcJmIRJMwvlj6zWce08SP/TPKN3GlNKgXhAawwcAPxXL9qOTTdiOBA==
   dependencies:
     "@commitlint/config-validator" "^19.0.3"
     "@commitlint/execute-rule" "^19.0.0"
-    "@commitlint/resolve-extends" "^19.0.3"
+    "@commitlint/resolve-extends" "^19.1.0"
     "@commitlint/types" "^19.0.3"
     chalk "^5.3.0"
     cosmiconfig "^8.3.6"
@@ -174,10 +174,10 @@
     git-raw-commits "^4.0.0"
     minimist "^1.2.8"
 
-"@commitlint/resolve-extends@^19.0.3":
-  version "19.0.3"
-  resolved "https://registry.yarnpkg.com/@commitlint/resolve-extends/-/resolve-extends-19.0.3.tgz#04d0e95f9119983765741df603d36f4457f56c13"
-  integrity sha512-18BKmta8OC8+Ub+Q3QGM9l27VjQaXobloVXOrMvu8CpEwJYv62vC/t7Ka5kJnsW0tU9q1eMqJFZ/nN9T/cOaIA==
+"@commitlint/resolve-extends@^19.1.0":
+  version "19.1.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/resolve-extends/-/resolve-extends-19.1.0.tgz#fa5b8f921e9c8d76f53624c35bf25b9676bd73fa"
+  integrity sha512-z2riI+8G3CET5CPgXJPlzftH+RiWYLMYv4C9tSLdLXdr6pBNimSKukYP9MS27ejmscqCTVA4almdLh0ODD2KYg==
   dependencies:
     "@commitlint/config-validator" "^19.0.3"
     "@commitlint/types" "^19.0.3"
