@@ -1,7 +1,7 @@
 {
 	"name": "@react-hookz/eslint-formatter-gha",
 	"description": "Eslint formatter that that outputs GitHub Actions annotations.",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"keywords": [
 		"eslint",
 		"formatter",
@@ -59,7 +59,7 @@
 		"postpack": "pinst --enable",
 		"build": "yarn build:clean && tsc --version && tsc",
 		"build:clean": "yarn rimraf ./dist",
-		"lint": "eslint .",
+		"lint": "eslint",
 		"lint:fix": "yarn lint --fix --fix-type problem,suggestion,layout"
 	},
 	"packageManager": "yarn@4.5.3"
