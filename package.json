@@ -1,7 +1,7 @@
 {
 	"name": "@react-hookz/eslint-formatter-gha",
 	"description": "Eslint formatter that that outputs GitHub Actions annotations.",
-	"version": "2.0.1",
+	"version": "2.0.0",
 	"keywords": [
 		"eslint",
 		"formatter",
@@ -23,14 +23,12 @@
 		"access": "public"
 	},
 	"type": "module",
-	"main": "./src/index.js",
-	"types": "./src/index.d.ts",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"sideEffects": false,
-	"exports": {
-		".": {
-			"require": "./src/index.cjs"
-		}
-	},
 	"engines": {
 		"node": ">=18.0.0"
 	},
@@ -40,12 +38,12 @@
 	"devDependencies": {
 		"@commitlint/cli": "^19.5.0",
 		"@commitlint/config-conventional": "^19.5.0",
-		"@react-hookz/eslint-config": "^2.1.5",
-		"@react-hookz/eslint-formatter-gha": "^1.0.0",
+		"@react-hookz/eslint-config": "^3.0.0",
+		"@react-hookz/eslint-formatter-gha": "^2.0.1",
 		"@semantic-release/exec": "^6.0.3",
-		"@types/eslint": "^8.56.7",
+		"@types/eslint": "^9.6.1",
 		"@types/node": "^22.8.6",
-		"eslint": "^8.57.0",
+		"eslint": "^9.15.0",
 		"eslint-plugin-prettier": "^5.2.1",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.2.10",
@@ -60,7 +58,7 @@
 		"prepack": "pinst --disable",
 		"postpack": "pinst --enable",
 		"build": "yarn build:clean && tsc --version && tsc",
-		"build:clean": "yarn rimraf -g ./src/**/*.js ./src/**/*.d.ts",
+		"build:clean": "yarn rimraf ./dist",
 		"lint": "eslint .",
 		"lint:fix": "yarn lint --fix --fix-type problem,suggestion,layout"
 	},

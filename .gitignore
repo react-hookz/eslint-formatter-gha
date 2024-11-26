@@ -11,8 +11,4 @@ yarn-error.log
 
 /coverage
 /node_modules
-
-/src/**/*.js
-/src/**/*.cjs
-/src/**/*.d.ts
-/src/**/*.d.cts
+/dist
