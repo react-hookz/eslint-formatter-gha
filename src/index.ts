@@ -2,14 +2,9 @@ import { endGroup, startGroup } from '@actions/core';
 import { issueCommand } from '@actions/core/lib/command.js';
 import { type ESLint } from 'eslint';
 
-const severityLabel = {
-	0: 'debug',
-	1: 'warning',
-	2: 'error',
-} as const;
+const severityLabel = ['debug', 'warning', 'error'];
 
-// eslint-disable-next-line unicorn/prefer-module
-module.exports = ((results): string => {
+const GHAFormatter: ESLint.Formatter['format'] = (results) => {
 	startGroup('Lint Annotations');
 
 	for (const result of results) {
@@ -29,4 +24,6 @@ module.exports = ((results): string => {
 	endGroup();
 
 	return '';
-}) as ESLint.Formatter['format'];
+};
+
+export default GHAFormatter;
