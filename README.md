@@ -37,13 +37,16 @@ eslint -f @react-hookz/gha
 
 <!-- readme: collaborators,contributors,semantic-release-bot/-,lint-action/- -start -->
 <table>
-<tr>
-    <td align="center">
-        <a href="https://github.com/xobotyi">
-            <img src="https://avatars.githubusercontent.com/u/6178739?v=4" width="100;" alt="xobotyi"/>
-            <br />
-            <sub><b>Anton Zinovyev</b></sub>
-        </a>
-    </td></tr>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/xobotyi">
+                    <img src="https://avatars.githubusercontent.com/u/6178739?v=4" width="100;" alt="xobotyi"/>
+                    <br />
+                    <sub><b>Anton Zinovyev</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
 </table>
 <!-- readme: collaborators,contributors,semantic-release-bot/-,lint-action/- -end -->
