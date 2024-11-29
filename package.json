@@ -42,7 +42,7 @@
 		"@react-hookz/eslint-formatter-gha": "^2.0.1",
 		"@semantic-release/exec": "^6.0.3",
 		"@types/eslint": "^9.6.1",
-		"@types/node": "^22.8.6",
+		"@types/node": "^22.10.1",
 		"eslint": "^9.15.0",
 		"eslint-plugin-prettier": "^5.2.1",
 		"husky": "^9.1.7",
