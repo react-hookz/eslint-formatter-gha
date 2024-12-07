@@ -3,7 +3,7 @@ import mdConfig from '@react-hookz/eslint-config/md.js';
 import typescriptConfig from '@react-hookz/eslint-config/typescript.js';
 
 const cfg = [
-	{ ignores: ['CHANGELOG.md', '.idea', 'node_modules', 'dist'] },
+	{ignores: ['CHANGELOG.md', '.idea', 'node_modules', 'dist']},
 	...baseConfig,
 	...typescriptConfig,
 	...mdConfig,

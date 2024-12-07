@@ -1,6 +1,6 @@
-import { endGroup, startGroup } from '@actions/core';
-import { issueCommand } from '@actions/core/lib/command.js';
-import { type ESLint } from 'eslint';
+import {endGroup, startGroup} from '@actions/core';
+import {issueCommand} from '@actions/core/lib/command.js';
+import {type ESLint} from 'eslint';
 
 const severityLabel = ['debug', 'warning', 'error'];
 
@@ -16,7 +16,7 @@ const GHAFormatter: ESLint.Formatter['format'] = (results) => {
 					line: message.line,
 					col: message.column,
 				},
-				message.message + ` (${message.ruleId})`
+				message.message + ` (${message.ruleId})`,
 			);
 		}
 	}
