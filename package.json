@@ -29,6 +29,9 @@
 		"dist"
 	],
 	"sideEffects": false,
+	"exports": {
+		".": "./src/index.js"
+	},
 	"engines": {
 		"node": ">=18.0.0"
 	},
