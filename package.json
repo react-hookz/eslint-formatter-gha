@@ -30,7 +30,7 @@
 	],
 	"sideEffects": false,
 	"exports": {
-		".": "./src/index.js"
+		".": "./dist/index.js"
 	},
 	"engines": {
 		"node": ">=18.0.0"
