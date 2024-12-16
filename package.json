@@ -45,7 +45,7 @@
 		"@semantic-release/exec": "^6.0.3",
 		"@types/eslint": "^9.6.1",
 		"@types/node": "^22.10.2",
-		"eslint": "^9.16.0",
+		"eslint": "^9.17.0",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.2.11",
 		"pinst": "^3.0.0",
