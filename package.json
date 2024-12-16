@@ -39,7 +39,7 @@
 		"@actions/core": "^1.11.1"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^19.5.0",
+		"@commitlint/cli": "^19.6.1",
 		"@commitlint/config-conventional": "^19.5.0",
 		"@react-hookz/eslint-config": "^4.1.6",
 		"@semantic-release/exec": "^6.0.3",
