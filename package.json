@@ -55,8 +55,6 @@
 	},
 	"scripts": {
 		"postinstall": "husky",
-		"prepack": "pinst --disable",
-		"postpack": "pinst --enable",
 		"build": "yarn build:clean && tsc --version && tsc",
 		"build:clean": "yarn rimraf ./dist",
 		"lint": "eslint",
