@@ -1,3 +1,8 @@
+> [!CAUTION]
+> __PACKAGE IS DEPRECATED AND WILL BE DELETED SOON__  
+> USE [@ver0/eslint-formatter-gha](https://github.com/ver0-project/eslint-formatter-gha) INSTEAD
+
+
 <div align="center">
 
 # ESLint Formatter for GitHub Actions
