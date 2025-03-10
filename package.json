@@ -40,7 +40,7 @@
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.8.0",
-		"@commitlint/config-conventional": "^19.7.1",
+		"@commitlint/config-conventional": "^19.8.0",
 		"@react-hookz/eslint-config": "^4.1.7",
 		"@types/eslint": "^9.6.1",
 		"@types/node": "^22.13.10",
