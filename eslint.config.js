@@ -1,12 +1,19 @@
-import baseConfig from '@react-hookz/eslint-config/base.js';
-import mdConfig from '@react-hookz/eslint-config/md.js';
-import typescriptConfig from '@react-hookz/eslint-config/typescript.js';
+import {buildConfig} from '@ver0/eslint-config';
 
+/** @typedef {import('eslint').Linter} Linter */
+
+/** @type {Linter.Config[]} */
 const cfg = [
-	{ignores: ['CHANGELOG.md', '.idea', 'node_modules', 'dist']},
-	...baseConfig,
-	...typescriptConfig,
-	...mdConfig,
+	{ignores: ['dist/**/*']},
+	...buildConfig({
+		globals: 'node',
+		react: true,
+		vitest: true,
+	}),
+	{
+		files: ['README.md'],
+		language: 'markdown/gfm',
+	},
 ];
 
 export default cfg;

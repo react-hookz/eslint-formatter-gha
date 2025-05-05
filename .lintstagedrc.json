@@ -1,4 +1,4 @@
 {
-	"*.{js,ts}": "yarn lint:fix",
-	"*.mdx?": "yarn lint:fix"
+	"*.{js,ts,json,yml}": "yarn lint:fix",
+	"*.md": "yarn lint:fix"
 }

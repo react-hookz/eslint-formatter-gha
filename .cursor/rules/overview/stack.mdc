@@ -1,0 +1,60 @@
+---
+description: 'Technical stack overview for the project'
+globs:
+alwaysApply: false
+---
+
+# Technical Stack Overview
+
+## Core Technology
+
+- **Language**: TypeScript (strict mode)
+- **Runtime**: Node.js (>=18)
+- **Module System**: ECMAScript Modules (ESM)
+- **Package Manager**: Yarn v4 (Berry)
+
+## Build & Development
+
+- **Compiler**: TypeScript compiler (tsc)
+- **Build Process**: Clean and compile TS to JS with type declarations
+- **Source Control**: Git with conventional commits
+- **Editor Config**: Standardized via `.editorconfig`
+
+## Quality Assurance
+
+- **Linting**: ESLint v9 with `@ver0/eslint-config`
+- **Formatting**: Prettier
+- **Commit Validation**: commitlint with conventional commit format
+- **Git Hooks**: husky for pre-commit/pre-push hooks
+- **Staged Files Validation**: lint-staged
+
+## CI/CD Pipeline
+
+- **Platform**: GitHub Actions
+- **Workflow File**: `.github/workflows/ci.yml`
+- **Process**:
+  1. Dependency installation with caching
+  2. Linting
+  3. Building
+  4. Release automation
+
+## Dependency Management
+
+- **Dependency Updates**: Dependabot (configured in `.github/dependabot.yml`)
+- **Package Registry**: npm (public)
+
+## Release Automation
+
+- **Framework**: semantic-release
+- **Configuration**: `.releaserc.json`
+- **Process**:
+  1. Analyzes commits for versioning (semantic versioning)
+  2. Generates/updates changelog
+  3. Creates GitHub release
+  4. Publishes to npm
+
+## Project Configuration
+
+- **TypeScript**: Strict mode with modern ESNext features
+- **npm**: Configured to publish only the dist directory
+- **Package**: Configured as ESM with proper exports

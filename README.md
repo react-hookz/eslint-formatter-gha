@@ -1,57 +1,65 @@
-> [!CAUTION]
-> __PACKAGE IS DEPRECATED AND WILL BE DELETED SOON__  
-> USE [@ver0/eslint-formatter-gha](https://github.com/ver0-project/eslint-formatter-gha) INSTEAD
-
-
 <div align="center">
+<h1>@ver0/eslint-formatter-gha</h1>
 
-# ESLint Formatter for GitHub Actions
+[![NPM Version](https://img.shields.io/npm/v/%40ver0%2Feslint-formatter-gha?style=flat-square)](https://www.npmjs.com/package/@ver0/eslint-formatter-gha)
+[![NPM Downloads](https://img.shields.io/npm/dm/%40ver0%2Feslint-formatter-gha?style=flat-square)](https://www.npmjs.com/package/@ver0/eslint-formatter-gha)
+[![Dependents (via libraries.io), scoped npm package](https://img.shields.io/librariesio/dependents/npm/%40ver0/eslint-formatter-gha?style=flat-square)](https://www.npmjs.com/package/@ver0/eslint-formatter-gha)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ver0-project/eslint-formatter-gha/ci.yml?style=flat-square)](https://github.com/ver0-project/eslint-formatter-gha/actions)
 
-[![NPM Version](https://flat.badgen.net/npm/v/@react-hookz/eslint-formatter-gha)](https://www.npmjs.com/package/@react-hookz/eslint-formatter-gha)
-[![NPM Downloads](https://flat.badgen.net/npm/dm/@react-hookz/eslint-formatter-gha)](https://www.npmjs.com/package/@react-hookz/eslint-formatter-gha)
-[![NPM Dependents](https://flat.badgen.net/npm/dependents/@react-hookz/eslint-formatter-gha)](https://www.npmjs.com/package/@react-hookz/eslint-formatter-gha)
-[![Build](https://img.shields.io/github/actions/workflow/status/react-hookz/eslint-formatter-gha/ci-cd.yml?branch=master&style=flat-square)](https://github.com/react-hookz/eslint-formatter-gha/actions)
-[![Types](https://flat.badgen.net/npm/types/@react-hookz/eslint-formatter-gha)](https://www.npmjs.com/package/@react-hookz/eslint-formatter-gha)
-
-× **[DISCORD](https://discord.gg/Fjwphtu65f)** ×
-**[CHANGELOG](https://github.com/react-hookz/eslint-formatter-gha/blob/master/CHANGELOG.md)** ×
-
+<p><br/>✍️ ESLint formatter for GitHub Actions - displays linting errors as GitHub Actions annotations</p>
 </div>
 
----
+## Features
 
-Custom formatter for ESLint that generates GitHub Actions annotations.
+- Seamlessly converts ESLint results into GitHub Actions annotations
+- Properly formats errors, warnings, and notices based on ESLint severity levels
+- Shows rule IDs alongside error messages
 
 ## Install
 
-This one is pretty simple, everyone knows what to do:
+This package can be installed with npm, yarn, or pnpm:
 
-```shell
-npm i --save-dev @react-hookz/eslint-formatter-gha
-# or
-yarn add -D @react-hookz/eslint-formatter-gha
+```bash
+# Using yarn
+yarn add -D @ver0/eslint-formatter-gha
+
+# Using npm
+npm install --save-dev @ver0/eslint-formatter-gha
+
+# Using pnpm
+pnpm add -D @ver0/eslint-formatter-gha
 ```
 
 ## Usage
 
+### Command Line
+
 ```shell
-eslint -f @react-hookz/gha
+eslint -f @ver0/gha
 ```
 
-## Contributors
+### In GitHub Actions Workflow
 
-<!-- readme: collaborators,contributors,semantic-release-bot/-,lint-action/- -start -->
-<table>
-	<tbody>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/xobotyi">
-                    <img src="https://avatars.githubusercontent.com/u/6178739?v=4" width="100;" alt="xobotyi"/>
-                    <br />
-                    <sub><b>Anton Zinovyev</b></sub>
-                </a>
-            </td>
-		</tr>
-	<tbody>
-</table>
-<!-- readme: collaborators,contributors,semantic-release-bot/-,lint-action/- -end -->
+```yaml
+- name: Lint
+  run: npx eslint . -f @ver0/gha
+```
+
+## How It Works
+
+This formatter converts ESLint results into GitHub Actions annotations using the
+[@actions/core](https://github.com/actions/toolkit/tree/main/packages/core) library. It maps ESLint severity levels to
+corresponding GitHub annotation types:
+
+- Severity 0 → Notice
+- Severity 1 → Warning
+- Severity 2 → Error
+
+## Requirements
+
+- Node.js >=18
+- ESLint
+
+## License
+
+[MIT](LICENSE)

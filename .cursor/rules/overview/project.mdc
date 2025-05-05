@@ -1,0 +1,53 @@
+---
+description: 'Overview of the project'
+globs:
+alwaysApply: false
+---
+
+# ESLint Formatter for GitHub Actions
+
+## Project Description
+
+This is a specialized ESLint formatter (`@ver0/eslint-formatter-gha`) that translates ESLint output into GitHub Actions
+annotations. The formatter uses GitHub Actions workflow commands to create inline annotations for lint errors directly
+in pull requests.
+
+## Key Components
+
+- **Single Formatter Module**: A TypeScript implementation that converts ESLint results to GitHub Actions annotations
+- **GitHub Actions Integration**: Uses `@actions/core` library for creating annotations with appropriate severity levels
+- **Simple API**: Designed to be used as an ESLint formatter option with minimal configuration
+
+## Repository Structure
+
+- `src/` - Contains the formatter implementation code
+  - `index.ts` - Main formatter implementation
+- `.github/workflows/` - CI/CD configuration
+- Configuration files:
+  - TypeScript: `tsconfig.json`, `tsconfig.build.json`
+  - ESLint: `eslint.config.js`
+  - Other: `.prettierrc.js`, `.commitlintrc.js`, `.releaserc.json`, etc.
+
+## Usage
+
+```shell
+eslint -f @ver0/gha
+```
+
+## Development Workflow
+
+1. The project uses TypeScript for type safety
+2. Code quality ensured via ESLint and Prettier
+3. Commit message format enforced with commitlint
+4. CI/CD pipelines configured in GitHub Actions
+5. Semantic versioning managed with semantic-release
+6. NPM scripts
+   - `build` - to build the distributable package.
+   - `build:clean` - to build with cleanup of output folder.
+   - `lint` - to lint the code.
+   - `lint:fix` - to lint applying all possible automatic fixes.
+
+## Dependencies
+
+- Runtime: `@actions/core`
+- Development: TypeScript, ESLint, semantic-release, and other standard tools
